@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load custom_tags %}
+
+
+{% block title %}Restaurants{% endblock %}
+
+{% block content %}
+<h2>Restaurants · {% restaurant_count %} </h2>
+<ul>
+    {% for restaurant in restaurants %}
+    <li>{{ restaurant.name }} - {{ restaurant.city.name }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

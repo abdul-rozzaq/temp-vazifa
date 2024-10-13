@@ -1,0 +1,47 @@
+{% load static %}
+{% load custom_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Travel Guide{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <style>
+        header nav ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Travel Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'city_list' %}">Cities</a></li>
+                <li><a href="{% url 'attraction_list' %}">Attractions</a></li>
+                <li><a href="{% url 'restaurant_list' %}">Restaurants</a></li>
+                <li><a href="{% url 'hotel_list' %}">Hotels</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <hr>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Travel Guide</p>
+    </footer>
+</body>
+
+</html>

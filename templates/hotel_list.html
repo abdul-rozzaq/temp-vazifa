@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load custom_tags %}
+
+
+{% block title %}Hotels{% endblock %}
+
+{% block content %}
+<h2>Hotels · {% hotel_count %} </h2>
+<ul>
+    {% for hotel in hotels %}
+    <li>{{ hotel.name }} - {{ hotel.city.name }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

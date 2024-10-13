@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load custom_tags %}
+
+{% block title %}City List{% endblock %}
+
+{% block content %}
+    <h2>City List · {% city_count  %}</h2>
+    <ul>
+        {% for city in cities %}
+            <li>{{ city.name }} - {{ city.country }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

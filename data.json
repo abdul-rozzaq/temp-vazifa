@@ -1,0 +1,352 @@
+[
+    {
+        "model": "project.city",
+        "pk": 1,
+        "fields": {
+            "name": "Paris",
+            "description": "The capital city of France, known for its art, fashion, and culture.",
+            "country": "France",
+            "population": 2148327
+        }
+    },
+    {
+        "model": "project.city",
+        "pk": 2,
+        "fields": {
+            "name": "New York",
+            "description": "The most populous city in the USA, known as the city that never sleeps.",
+            "country": "USA",
+            "population": 8419600
+        }
+    },
+    {
+        "model": "project.city",
+        "pk": 3,
+        "fields": {
+            "name": "Tokyo",
+            "description": "The bustling capital of Japan, known for its modern skyline and traditional temples.",
+            "country": "Japan",
+            "population": 13929286
+        }
+    },
+    {
+        "model": "project.city",
+        "pk": 4,
+        "fields": {
+            "name": "Istanbul",
+            "description": "A major city in Turkey, known for its historic sites and its location between Europe and Asia.",
+            "country": "Turkey",
+            "population": 15519267
+        }
+    },
+    {
+        "model": "project.city",
+        "pk": 5,
+        "fields": {
+            "name": "Dubai",
+            "description": "A city in the United Arab Emirates, famous for its luxury shopping, ultramodern architecture, and lively nightlife.",
+            "country": "UAE",
+            "population": 3331420
+        }
+    },
+    {
+        "model": "project.attraction",
+        "pk": 1,
+        "fields": {
+            "city": 1,
+            "name": "Eiffel Tower",
+            "description": "Iconic iron lattice tower in Paris.",
+            "ticket_price": "25.00"
+        }
+    },
+    {
+        "model": "project.attraction",
+        "pk": 2,
+        "fields": {
+            "city": 1,
+            "name": "Louvre Museum",
+            "description": "World's largest art museum.",
+            "ticket_price": "17.00"
+        }
+    },
+    {
+        "model": "project.restaurant",
+        "pk": 1,
+        "fields": {
+            "city": 1,
+            "name": "Le Jules Verne",
+            "cuisine_type": "French",
+            "rating": "4.8"
+        }
+    },
+    {
+        "model": "project.restaurant",
+        "pk": 2,
+        "fields": {
+            "city": 1,
+            "name": "Epicure",
+            "cuisine_type": "French",
+            "rating": "4.9"
+        }
+    },
+    {
+        "model": "project.hotel",
+        "pk": 1,
+        "fields": {
+            "city": 1,
+            "name": "Hotel Plaza Athenee",
+            "stars": 5,
+            "price_per_night": "1200.00"
+        }
+    },
+    {
+        "model": "project.hotel",
+        "pk": 2,
+        "fields": {
+            "city": 1,
+            "name": "Le Meurice",
+            "stars": 5,
+            "price_per_night": "1000.00"
+        }
+    },
+    {
+        "model": "project.attraction",
+        "pk": 3,
+        "fields": {
+            "city": 2,
+            "name": "Statue of Liberty",
+            "description": "Famous symbol of freedom in New York.",
+            "ticket_price": "22.00"
+        }
+    },
+    {
+        "model": "project.attraction",
+        "pk": 4,
+        "fields": {
+            "city": 2,
+            "name": "Central Park",
+            "description": "Urban park in Manhattan.",
+            "ticket_price": "0.00"
+        }
+    },
+    {
+        "model": "project.restaurant",
+        "pk": 3,
+        "fields": {
+            "city": 2,
+            "name": "Le Bernardin",
+            "cuisine_type": "Seafood",
+            "rating": "4.7"
+        }
+    },
+    {
+        "model": "project.restaurant",
+        "pk": 4,
+        "fields": {
+            "city": 2,
+            "name": "Eleven Madison Park",
+            "cuisine_type": "American",
+            "rating": "4.8"
+        }
+    },
+    {
+        "model": "project.hotel",
+        "pk": 3,
+        "fields": {
+            "city": 2,
+            "name": "The Plaza Hotel",
+            "stars": 5,
+            "price_per_night": "1500.00"
+        }
+    },
+    {
+        "model": "project.hotel",
+        "pk": 4,
+        "fields": {
+            "city": 2,
+            "name": "Four Seasons Hotel New York",
+            "stars": 5,
+            "price_per_night": "1300.00"
+        }
+    },
+    {
+        "model": "project.attraction",
+        "pk": 5,
+        "fields": {
+            "city": 3,
+            "name": "Tokyo Tower",
+            "description": "Famous observation tower in Tokyo.",
+            "ticket_price": "15.00"
+        }
+    },
+    {
+        "model": "project.attraction",
+        "pk": 6,
+        "fields": {
+            "city": 3,
+            "name": "Sensō-ji Temple",
+            "description": "Ancient Buddhist temple in Tokyo.",
+            "ticket_price": "0.00"
+        }
+    },
+    {
+        "model": "project.restaurant",
+        "pk": 5,
+        "fields": {
+            "city": 3,
+            "name": "Sukiyabashi Jiro",
+            "cuisine_type": "Sushi",
+            "rating": "4.9"
+        }
+    },
+    {
+        "model": "project.restaurant",
+        "pk": 6,
+        "fields": {
+            "city": 3,
+            "name": "Narisawa",
+            "cuisine_type": "Japanese",
+            "rating": "4.8"
+        }
+    },
+    {
+        "model": "project.hotel",
+        "pk": 5,
+        "fields": {
+            "city": 3,
+            "name": "The Ritz-Carlton Tokyo",
+            "stars": 5,
+            "price_per_night": "1400.00"
+        }
+    },
+    {
+        "model": "project.hotel",
+        "pk": 6,
+        "fields": {
+            "city": 3,
+            "name": "Park Hyatt Tokyo",
+            "stars": 5,
+            "price_per_night": "1200.00"
+        }
+    },
+    {
+        "model": "project.attraction",
+        "pk": 7,
+        "fields": {
+            "city": 4,
+            "name": "Hagia Sophia",
+            "description": "Historic museum and former mosque in Istanbul.",
+            "ticket_price": "12.00"
+        }
+    },
+    {
+        "model": "project.attraction",
+        "pk": 8,
+        "fields": {
+            "city": 4,
+            "name": "Blue Mosque",
+            "description": "Historic mosque and popular tourist attraction.",
+            "ticket_price": "0.00"
+        }
+    },
+    {
+        "model": "project.restaurant",
+        "pk": 7,
+        "fields": {
+            "city": 4,
+            "name": "Mikla",
+            "cuisine_type": "Turkish",
+            "rating": "4.6"
+        }
+    },
+    {
+        "model": "project.restaurant",
+        "pk": 8,
+        "fields": {
+            "city": 4,
+            "name": "360 Istanbul",
+            "cuisine_type": "Fusion",
+            "rating": "4.7"
+        }
+    },
+    {
+        "model": "project.hotel",
+        "pk": 7,
+        "fields": {
+            "city": 4,
+            "name": "Ciragan Palace Kempinski",
+            "stars": 5,
+            "price_per_night": "2000.00"
+        }
+    },
+    {
+        "model": "project.hotel",
+        "pk": 8,
+        "fields": {
+            "city": 4,
+            "name": "Four Seasons Istanbul",
+            "stars": 5,
+            "price_per_night": "1800.00"
+        }
+    },
+    {
+        "model": "project.attraction",
+        "pk": 9,
+        "fields": {
+            "city": 5,
+            "name": "Burj Khalifa",
+            "description": "The tallest building in the world.",
+            "ticket_price": "35.00"
+        }
+    },
+    {
+        "model": "project.attraction",
+        "pk": 10,
+        "fields": {
+            "city": 5,
+            "name": "The Dubai Mall",
+            "description": "The largest shopping mall in the world.",
+            "ticket_price": "0.00"
+        }
+    },
+    {
+        "model": "project.restaurant",
+        "pk": 9,
+        "fields": {
+            "city": 5,
+            "name": "Al Hadheerah",
+            "cuisine_type": "Middle Eastern",
+            "rating": "4.7"
+        }
+    },
+    {
+        "model": "project.restaurant",
+        "pk": 10,
+        "fields": {
+            "city": 5,
+            "name": "Pierchic",
+            "cuisine_type": "Seafood",
+            "rating": "4.8"
+        }
+    },
+    {
+        "model": "project.hotel",
+        "pk": 9,
+        "fields": {
+            "city": 5,
+            "name": "Burj Al Arab",
+            "stars": 7,
+            "price_per_night": "2500.00"
+        }
+    },
+    {
+        "model": "project.hotel",
+        "pk": 10,
+        "fields": {
+            "city": 5,
+            "name": "Atlantis The Palm",
+            "stars": 5,
+            "price_per_night": "2200.00"
+        }
+    }
+]
